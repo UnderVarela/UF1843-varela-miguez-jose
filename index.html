@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form class="formulario">
+        <h1>Formulario de contacto</h1>
+        <fieldset name="hablemos">
+          <legend>Hablemos...</legend>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+          <span class="obligatorio">campo obligatorio</span><br>
+          <label for="direccion">Dirección:</label>
+          <input type="text" id="direccion" name="direccion">
+          <span class="obligatorio">campo obligatorio</span><br>
+          <label for="correo">Correo electrónico:</label>
+          <input type="email" id="correo" name="correo" required>
+          <span class="obligatorio">campo obligatorio</span><br>
+          <label for="asunto">Asunto:</label>
+          <input type="text" id="asunto" name="asunto">
+          <span class="obligatorio">campo obligatorio</span><br>
+          <label for="mensaje">Mensaje:</label><br>
+          <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea><br>
+          <span class="obligatorio">campo obligatorio</span>
+        </fieldset>
+        <fieldset name="otros">
+          <legend>Otros datos</legend>
+          
+            <label class="contacto">¿Cómo contactó con nosotros?</label>
+            <input type="checkbox" id="web" name="contacto" value="web">
+            <label for="web">Web</label>
+            <input type="checkbox" id="amigos" name="contacto" value="amigos">
+            <label for="amigos">Amigos</label>
+            <input type="checkbox" id="prensa" name="contacto" value="prensa">
+            <label for="prensa">Prensa</label>
+            <input type="checkbox" id="otros" name="contacto" value="otros">
+            <label for="otros">Otros</label><br>
+            <label for="espanol" class="espanol">¿Es usted español?</label>
+            <input type="radio" id="btn-yes">
+            <label for="si">Si</label>
+            <input type="radio" id="btn-no">
+            <label for="no">no</label><br>
+          
+          <label>Sus intereses</label><br>
+          <select id="intereses" name="intereses" multiple>
+            <option value="">Selecciona una opción</option>
+            <option value="deportes">Deportes</option>
+            <option value="naturaleza">Naturaleza</option>
+            <option value="informatica">Informática</option>
+            <option value="cine">Cine</option>
+          </select><br>
+        </fieldset>
+        <button type="submit">Enviar</button>
+      </form>
+</body>
+</html>
